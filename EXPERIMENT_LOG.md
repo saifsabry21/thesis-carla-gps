@@ -50,3 +50,7 @@ This proves that the sensor can be attached, read, and logged in the existing CA
 One parked-car run completed with 101 readings (50 clean, 51 attacked). All 13 archived-data checks passed. The first affected sample occurred at 5.001833 simulated seconds. Original sensor positions remained constant; reported GPS differed by approximately five metres during the attack.
 
 [Full experiment notes, evidence, and team-document draft](results/gps_fixed_offset_20261017T211819_023749Z/EXPERIMENT_NOTES.md). No driving controller or VLA was tested, and no end-to-end ASR is claimed.
+
+## GPS-VISUAL-01: visual run recorded 2026-10-17 21:46:33 UTC
+
+Same manipulation plus on-screen position markers and pauses. 101 readings (50 clean, 51 attacked), all 13 data checks passed. The screenshot supplied by Saif is preserved with this run. Source CSV and metadata were transferred from the university PC. [Run notes and evidence](results/gps_offset_visual_20261017T214633_130642Z/EXPERIMENT_NOTES.md). Driving/VLA effects remain untested.

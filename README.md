@@ -2,9 +2,15 @@
 
 Saif's scripts and evidence for the GPS/GNSS part of the team's autonomous-driving thesis.
 
+## Continue next session
+
+See [HANDOVER.md](HANDOVER.md) for completed work, commands, and the next technical decision.
+
 ## Current milestone
 
-**The clean stationary baseline and the first fixed GPS-output offset experiment have been verified. Driving and VLA effects remain untested.**
+**The clean baseline, fixed GPS-output offset, and visual offset demonstration are verified. Driving and VLA effects remain untested.**
+
+The visual run repeats the manipulation and adds real/false-position markers in CARLA. [View its screenshot, data, and notes](results/gps_offset_visual_20261017T214633_130642Z/EXPERIMENT_NOTES.md). Keep all three experiment scripts: baseline, fixed offset, and visual offset.
 
 The first offset run recorded 50 clean and 51 manipulated readings. All clean coordinates were preserved, and every attacked reading differed by approximately five metres. [Read the experiment and see the graph](results/gps_fixed_offset_20261017T211819_023749Z/EXPERIMENT_NOTES.md).
 
@@ -28,6 +34,8 @@ This is preparation for later single-sensor experiments. It does not demonstrate
 | `baseline_output.txt` | Clearly labeled actual terminal excerpts from separate baseline observations. |
 | `environment.txt` | Recorded machine and software details. |
 | `gps_fixed_offset.py` | Executed parked-car experiment: five clean simulation seconds followed by five with a +5 m map-X offset in the script's reported GNSS output. |
+| `gps_offset_visual.py` | Same GPS-output manipulation with CARLA markers and viewing pauses. Original visual run, screenshot, and validation are archived in its dated results folder. |
+| `HANDOVER.md` | End-of-session status and next-session instructions. |
 | `analyze_gps_offset.py` | Rechecks saved data and generates validation results and plots; requires Matplotlib, no CARLA connection. |
 | `results/gps_fixed_offset_20261017T211819_023749Z/` | Original 101-row CSV, settings, validation, plot, and experiment notes. |
 | `EXPERIMENT_LOG.md` | Milestones, explanations, limitations, and meeting notes. |

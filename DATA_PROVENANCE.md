@@ -28,3 +28,11 @@ Original readings and metadata were downloaded through RustDesk File Transfer fr
 - `metadata.json`: SHA-256 `ddacd7ff40c2a02a9fcb950ac9089542644f2366a711410fe53e0de275a2d5f0`.
 
 `gps_fixed_offset.py` is the supplied source executed by the user on the university PC. `analyze_gps_offset.py` was executed locally after transfer. Its validation file, plots, and experiment notes are derived artifacts, not raw CARLA outputs. No synthetic rows were added.
+
+## Visual fixed-offset run
+
+Original CSV and metadata were downloaded through RustDesk from `/home/g02-f26/thesis-gps/results/gps_offset_visual_20261017T214633_130642Z/` and preserved in `results/gps_offset_visual_20261017T214633_130642Z/`. The user-supplied CARLA screenshot is archived unedited; no exact sensor-frame association is claimed. Plots, validation, and notes are locally derived from this visual run.
+
+- `readings.csv`: SHA-256 `f4a52051dc11bfd4db98bb9c9a0600f9916a04a4aa403ba0642c676cc3b96585`.
+- `metadata.json`: SHA-256 `009997f20cb1727e117fba11adae09c29ecd3fc9dfb58ce36be7cd8ed014dad8`.
+- `carla_visual_screenshot.png`: SHA-256 `cc6de6796f4c48ee9dfac901e915f299c75188995f84fd9df48de61031209263`.
