@@ -19,3 +19,12 @@ The following two files were copied from the university Ubuntu PC using the exis
 - No GPS attacks or VLA-driving results are claimed.
 
 Connection output, machine details, and other console excerpts were transcribed from user-provided terminal output and are labeled separately from the original downloaded files.
+
+## Fixed GPS-output offset run
+
+Original readings and metadata were downloaded through RustDesk File Transfer from `/home/g02-f26/thesis-gps/results/gps_fixed_offset_20261017T211819_023749Z/`. The full original files are preserved in `results/gps_fixed_offset_20261017T211819_023749Z/`. The CSV has 101 measurements: 50 clean and 51 attacked.
+
+- `readings.csv`: SHA-256 `1117dd39783399ad73d2282baf4a32d6f45f41b6cde5abb7524112c462a1f385`.
+- `metadata.json`: SHA-256 `ddacd7ff40c2a02a9fcb950ac9089542644f2366a711410fe53e0de275a2d5f0`.
+
+`gps_fixed_offset.py` is the supplied source executed by the user on the university PC. `analyze_gps_offset.py` was executed locally after transfer. Its validation file, plots, and experiment notes are derived artifacts, not raw CARLA outputs. No synthetic rows were added.

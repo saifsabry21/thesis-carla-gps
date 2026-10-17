@@ -4,7 +4,9 @@ Saif's scripts and evidence for the GPS/GNSS part of the team's autonomous-drivi
 
 ## Current milestone
 
-**A clean, stationary GNSS baseline has been verified. No GPS attack has been run or evaluated yet.**
+**The clean stationary baseline and the first fixed GPS-output offset experiment have been verified. Driving and VLA effects remain untested.**
+
+The first offset run recorded 50 clean and 51 manipulated readings. All clean coordinates were preserved, and every attacked reading differed by approximately five metres. [Read the experiment and see the graph](results/gps_fixed_offset_20261017T211819_023749Z/EXPERIMENT_NOTES.md).
 
 On the university Ubuntu PC, we launched CARLA 0.9.14, connected using its Python API, spawned a parked Tesla Model 3, attached a GNSS sensor, and collected 100 measurements. The car was also confirmed visually in the simulator. The experiment saves readings to CSV and removes its own test vehicle and sensor.
 
@@ -25,6 +27,9 @@ This is preparation for later single-sensor experiments. It does not demonstrate
 | `connection_output.txt` | Actual connection output supplied in chat. |
 | `baseline_output.txt` | Clearly labeled actual terminal excerpts from separate baseline observations. |
 | `environment.txt` | Recorded machine and software details. |
+| `gps_fixed_offset.py` | Executed parked-car experiment: five clean simulation seconds followed by five with a +5 m map-X offset in the script's reported GNSS output. |
+| `analyze_gps_offset.py` | Rechecks saved data and generates validation results and plots; requires Matplotlib, no CARLA connection. |
+| `results/gps_fixed_offset_20261017T211819_023749Z/` | Original 101-row CSV, settings, validation, plot, and experiment notes. |
 | `EXPERIMENT_LOG.md` | Milestones, explanations, limitations, and meeting notes. |
 | `DATA_PROVENANCE.md` | Original file locations, integrity hashes, and checks on the downloaded data. |
 
@@ -81,15 +86,25 @@ Unchanged latitude and longitude are expected for the parked car. They are simul
 
 ## Meeting summary
 
-> I verified the CARLA installation and its Python connection, then implemented a stationary GNSS baseline. The script spawns a vehicle, attaches a GNSS sensor, records timestamped readings, and saves them to CSV. We collected 100 readings and confirmed the car visually. Next we will validate a controlled GPS offset, then establish how GPS enters the driving controller before measuring effects on driving.
+> I verified the CARLA installation and its Python connection, then implemented a stationary GNSS baseline. The script spawns a vehicle, attaches a GNSS sensor, records timestamped readings, and saves them to CSV. We collected 100 readings and confirmed the car visually. We then verified a controlled five-metre GPS-output offset using 101 readings. Next we need to establish how GPS enters the driving controller before measuring driving effects.
 
 ## Limits of these results
 
 - The 100-reading count is an observed run result, not a guaranteed count on every machine.
-- The recording duration uses wall-clock time; a fixed-step synchronized experiment has not been configured.
+- The original baseline records using wall-clock time; the new offset experiment uses GNSS simulation timestamps. Neither uses a fixed-step synchronized world.
 - No route, moving-vehicle baseline, repeated-trial statistics, or attack success rate has been established.
 - No GPS-consuming driving controller or GPS-to-Alpamayo input path has been verified.
-- The proposed GPS-offset script was not included as completed work because execution was paused to document the baseline.
+- The fixed-offset result is a sensor-output manipulation test, not an end-to-end driving attack or an estimate of attack success probability.
+
+## Run the fixed-offset experiment
+
+With CARLA running and the `carla` environment active:
+
+```bash
+python -u gps_fixed_offset.py
+```
+
+A new dated folder under `results/` preserves each run. See the [experiment notes](results/gps_fixed_offset_20261017T211819_023749Z/EXPERIMENT_NOTES.md) for interpretation and the analysis command.
 
 ## Official implementation references
 

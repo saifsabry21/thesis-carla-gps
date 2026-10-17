@@ -16,7 +16,7 @@ Owner: Saif. Execution machine: university Ubuntu PC, accessed through RustDesk.
 | VIS-01 | Inspect vehicle in CARLA | Car visible after waiting before reading its location and repositioning spectator | Verified |
 | DATA-01 | Archive saved baseline CSV | Original full CSV copied from university PC; 100 measurement rows; first five match the chat excerpt | Verified and archived |
 | DATA-02 | Archive executed source | Original `gps_baseline.py` copied from university PC through RustDesk | Archived without source changes |
-| GPS-OFFSET-01 | Implement and evaluate GPS offset | Code proposed in chat; no execution evidence | Not performed |
+| GPS-OFFSET-01 | Fixed +5 m GNSS-output offset | 50 clean and 51 attacked readings; approximate 5 m separation verified | Verified at output level; driving not tested |
 
 ### What changed during troubleshooting
 
@@ -40,7 +40,13 @@ This proves that the sensor can be attached, read, and logged in the existing CA
 ### Next work, not completed results
 
 1. Preserve the archived original CSV before any rerun overwrites it.
-2. Validate a fixed GPS position offset and log clean versus modified values.
+2. Completed subsequently: fixed GPS offset with clean and modified values archived; see the run below.
 3. Identify the component that consumes GPS; built-in driving behavior must not be assumed to use the GNSS sensor.
 4. Establish a moving baseline and matched clean/attacked scenarios.
 5. Define repeated-trial measurements and only then evaluate driving effects.
+
+## GPS-OFFSET-01: recorded 2026-10-17 21:18:19 UTC
+
+One parked-car run completed with 101 readings (50 clean, 51 attacked). All 13 archived-data checks passed. The first affected sample occurred at 5.001833 simulated seconds. Original sensor positions remained constant; reported GPS differed by approximately five metres during the attack.
+
+[Full experiment notes, evidence, and team-document draft](results/gps_fixed_offset_20261017T211819_023749Z/EXPERIMENT_NOTES.md). No driving controller or VLA was tested, and no end-to-end ASR is claimed.
