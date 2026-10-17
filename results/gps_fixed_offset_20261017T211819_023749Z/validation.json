@@ -1,0 +1,34 @@
+{
+  "interpretation": "GPS-output manipulation verified; no driving or VLA effect evaluated",
+  "checks": {
+    "all_numeric_values_finite": true,
+    "all_rows_have_valid_phase": true,
+    "clean_coordinates_unchanged": true,
+    "all_attacked_coordinates_changed": true,
+    "clean_offsets_zero": true,
+    "attack_offsets_match_settings": true,
+    "phase_matches_simulation_time": true,
+    "simulation_times_strictly_increasing": true,
+    "frames_strictly_increasing": true,
+    "counts_match_metadata": true,
+    "horizontal_offset_within_1cm": true,
+    "sensor_motion_below_1mm": true,
+    "recording_completed": true
+  },
+  "all_checks_passed": true,
+  "total_readings": 101,
+  "clean_readings": 50,
+  "attacked_readings": 51,
+  "first_attacked_elapsed_seconds": 5.001833009417169,
+  "last_elapsed_seconds": 9.999954494298436,
+  "max_recorded_sensor_motion_metres": 0.0,
+  "approx_attack_horizontal_separation_metres": {
+    "min": 4.999999999963207,
+    "max": 4.999999999963207
+  },
+  "distance_method": "Haversine spherical approximation, radius 6378137 m; not an ellipsoidal geodesic",
+  "source_sha256": {
+    "readings.csv": "1117dd39783399ad73d2282baf4a32d6f45f41b6cde5abb7524112c462a1f385",
+    "metadata.json": "ddacd7ff40c2a02a9fcb950ac9089542644f2366a711410fe53e0de275a2d5f0"
+  }
+}
