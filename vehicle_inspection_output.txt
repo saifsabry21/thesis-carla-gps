@@ -1,0 +1,8 @@
+Source: user-provided terminal output from the earlier diagnostic attempt.
+This was observed when no baseline process was running. It is not the result
+of the later successful visual baseline run.
+
+Tesla vehicles found: 0
+Camera unchanged: send this output so we can identify the test car.
+
+The subsequent process check printed no matching gps_baseline.py process.

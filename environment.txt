@@ -1,0 +1,25 @@
+Observed university-PC configuration - 2026-10-17
+Source: user-provided command outputs, not a newly executed system audit.
+
+OS: Ubuntu 24.04.3 LTS (noble)
+GPU: NVIDIA GeForce RTX 3090
+GPU memory: 24576 MiB
+NVIDIA driver: 595.99.02
+CUDA version displayed by nvidia-smi: 13.2
+  This is the driver's advertised CUDA support; no CUDA toolkit installation
+  or Alpamayo runtime was verified.
+System RAM: 62 GiB reported by free -h
+Root filesystem: 937 GB total, 833 GB available at inspection
+
+CARLA server: 0.9.14
+CARLA Python client: 0.9.14
+Map: Carla/Maps/Town10HD_Opt
+CARLA installation: /home/g02-f26/carla_simulator/CARLA_0.9.14
+Working folder: /home/g02-f26/thesis-gps
+Conda environment: carla
+Environment Python: 3.8.20
+Imported CARLA module:
+/home/g02-f26/miniconda3/envs/carla/lib/python3.8/site-packages/carla/__init__.py
+
+The Conda base environment had Python 3.14.7 and was not used for CARLA tests.
+No credentials or remote-access IDs are included.

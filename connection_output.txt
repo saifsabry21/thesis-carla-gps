@@ -1,0 +1,6 @@
+Source: terminal output provided by Saif during the university-PC session.
+
+Client version: 0.9.14
+Server version: 0.9.14
+Map: Carla/Maps/Town10HD_Opt
+Connection successful

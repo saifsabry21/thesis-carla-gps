@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+CARLA_*/
+miniconda*/
+
+# CSV files and text logs are intentionally tracked as experiment evidence.
