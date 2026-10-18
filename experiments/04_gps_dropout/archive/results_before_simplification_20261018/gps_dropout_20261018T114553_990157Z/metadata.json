@@ -1,0 +1,30 @@
+{
+  "status": "recording_completed",
+  "started_utc": "20261018T114553_990157Z",
+  "map": "Carla/Maps/Town10HD_Opt",
+  "client_version": "0.9.14",
+  "server_version": "0.9.14",
+  "synchronous_mode": false,
+  "fixed_delta_seconds": null,
+  "attack_type": "gps_output_dropout",
+  "clean_seconds": 5.0,
+  "dropout_seconds": 5.0,
+  "recovery_seconds": 5.0,
+  "dropout_representation": "output_available=false; reported coordinates empty",
+  "recovery_policy": "pass the current sample; no stale replay",
+  "sensor_tick_seconds": 0.1,
+  "gnss_noise_bias_and_stddev": 0.0,
+  "scope": "GNSS output manipulation only; no driving consumer",
+  "vehicle_id": 26,
+  "vehicle_start_xyz": [
+    -64.64484405517578,
+    24.471010208129883,
+    0.0017916487995535135
+  ],
+  "sample_counts": {
+    "clean": 50,
+    "dropout": 50,
+    "recovery": 50
+  },
+  "visualization": "Ground-truth car label always shown; GPS output marker only when available; status labels show clean/dropout/recovery. No false GPS position is drawn."
+}

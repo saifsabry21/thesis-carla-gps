@@ -1,0 +1,45 @@
+{
+  "01_gps_baseline": {
+    "source_run": "recorded_baseline",
+    "preserved_file_sha256": {
+      "gps_baseline.csv": "72f524fcc525d4311333d26dfd3a2b0012e595ed096b1ee1eebde92c32d5b483",
+      "baseline_output.txt": "be29bf0dcab843e7a4e9935abb5855f8e8945439c54cef212c81d6c69c208c62"
+    },
+    "file_count": 3
+  },
+  "02_gps_fixed_offset": {
+    "source_run": "gps_fixed_offset_20261018T123916_766224Z",
+    "preserved_file_sha256": {
+      "readings.csv": "485b3e1b76338bd52e559bdd61bcf0993bdf6be5356131288204c4b04872c08e",
+      "metadata.json": "cc13a2eb310afcb48c3b677f7726d7d252e2a8a2d3d798cc641d1aeb8028d3c3",
+      "validation.json": "b97a9d4cfde1f91b73d08e33a4696ac1d6cda7d4e10406c2e343e72bfd26da6a",
+      "01_clean_recorded_review.png": "fa3fe14f10515d0fe56f1c2059dece8f2a8ac110bf535bf29b53c73566cf86c6",
+      "02_offset_5m_recorded_review.png": "d600447b3f14b3254c90a61b47cef17fecf9e715447d99048c7aec3070f71afc"
+    },
+    "file_count": 7
+  },
+  "03_gps_gradual_drift": {
+    "source_run": "gps_gradual_drift_20261018T124241_669723Z",
+    "preserved_file_sha256": {
+      "readings.csv": "d766478ca63488cd104ec5b9a7bd81e485a8988c88fd315b97425802ef634fd1",
+      "metadata.json": "a57450865a38b44630b695fa0603ce1886f7fe10ea6879d73a27a5ec4432d4e9",
+      "validation.json": "6d9bce7d03043b7cb5e2551544ebf6156870d67b51eb975e62de8afbbf0e0652",
+      "01_clean_recorded_review.png": "822eb8a06ab5ae05c2601ebc7a506bef0cc1b5d5177072728657ea2e2de281ca",
+      "02_live_drift_approximately_6m.png": "17238739b308177dcfcf8f1a1278d735c5e97bb9a97278a280671ff40c852787",
+      "03_drift_endpoint_10m_recorded_review.png": "5c092cd8b2df5a3f7f2268fbcd4323baba681156f1713f37956e94cd05b710ac"
+    },
+    "file_count": 8
+  },
+  "04_gps_dropout": {
+    "source_run": "gps_dropout_20261018T114553_990157Z",
+    "preserved_file_sha256": {
+      "readings.csv": "40b0a2c55d36c709079e7cfcdd640061591e8f8731f35145e89903c00477da56",
+      "metadata.json": "750bb297b494aa369b3199476e7b298c85ccf4b6dd13728c3c95ba7bacd87084",
+      "validation.json": "194ee5acb041ff23e73c31eb7226bb736aefb9558c9e5ec326496195f3a32382",
+      "01_available_green_ring_recorded_review.png": "f4a673a8ce6891e94f6f1dd34af4ffc84f62641b7f5def38fee51de867ce07fd",
+      "02_missing_red_cross_recorded_review.png": "031b4574c48a526eea070e6f236cce1f7d4b23a697acf9b31997f80cff693216",
+      "03_restored_green_ring_recorded_review.png": "ae387a69b51e7d83bbcead184e86f76f9ec51f050c942c3f061872cfef1d9110"
+    },
+    "file_count": 8
+  }
+}

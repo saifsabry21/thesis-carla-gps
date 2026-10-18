@@ -149,3 +149,7 @@ Check again with `pgrep`. If multiple processes appear or the port belongs to a 
 
 
 All three combined scripts have now been transferred and executed; checks passed. Use the current experiment README for the latest run.
+
+## Current simplified evidence layout
+
+On the laptop, each experiment has one flat results/ folder. To check it from its experiment folder use `python SCRIPT.py --check results`; to replay use `python -u SCRIPT.py --replay results`. Replace SCRIPT.py with that experiment's single active script. University runs still have timestamped folders. Older laptop runs are now archived.

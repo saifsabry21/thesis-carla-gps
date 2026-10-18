@@ -1,0 +1,1 @@
+Baseline: original 100-reading GPS CSV and saved terminal output. No attack or controller/VLA effect was tested. No baseline screenshot was supplied. This CSV is the original full dataset, not the six-row excerpt.

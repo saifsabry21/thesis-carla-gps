@@ -1,0 +1,24 @@
+Source: terminal excerpts provided by Saif. These are separate observations,
+not a single continuous console capture.
+
+FINAL VISUAL VERIFICATION RUN - OBSERVED BEFORE PRESSING ENTER
+Vehicle spawned and parked.
+Test vehicle ID: 30
+Test vehicle position: Location(x=-64.644844, y=24.471010, z=0.001788)
+Camera moved above the car. Look at the CARLA window.
+Recording GPS for 10 seconds...
+GPS recording finished. The car is still present.
+Readings collected: 100
+Check the CARLA window. Press Enter here to remove the car...
+
+EARLIER RUN - FILE SAVE AND CLEANUP CONFIRMED
+Readings recorded: 100
+CSV saved to: /home/g02-f26/thesis-gps/gps_baseline.csv
+Test vehicle and sensor removed.
+
+FINAL CSV CHECK
+Saif subsequently ran head -n 6 on gps_baseline.csv. The exact five data
+rows from that output are preserved in gps_baseline_excerpt.csv.
+The other rows have not been reconstructed or fabricated. The complete original
+CSV was subsequently retrieved through RustDesk as gps_baseline.csv and contains
+100 measurement rows.
