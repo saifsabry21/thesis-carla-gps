@@ -1,0 +1,182 @@
+[
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\.gitignore",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\.gitignore",
+    "sha256": "1b9222e494a7451b71ef98bee25f7a96a3fb9ebd8e6128726ad3625609873da3"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\README.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\archive\\previous_layout_notes\\README.md",
+    "sha256": "cb8c530d6b21c90026ea75628b4f35d50cc0d27d0601abc8a9c5f03230478e30"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\HANDOVER.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\archive\\previous_layout_notes\\HANDOVER.md",
+    "sha256": "c1ccff178c1096b787bbfeab0978d1385dc0479fbe666c7539dcbc8da8242270"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\EXPERIMENT_LOG.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\archive\\previous_layout_notes\\EXPERIMENT_LOG.md",
+    "sha256": "df0b2bda9d4541b2fe77bcff76bc817adc37bd6783e35fba776d77104b6c992c"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\DATA_PROVENANCE.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\archive\\previous_layout_notes\\DATA_PROVENANCE.md",
+    "sha256": "1b6622a294ed62df607e74a9780b2f8a8218adad54875152bd7eebd89f046a02"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\check_connection.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\check_connection.py",
+    "sha256": "8c69c5e0482366b99711d563172e99bae39bd6daf9770116c4459fff1b783898"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\launch_carla.sh",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\launch_carla.sh",
+    "sha256": "5c50b84f8f8bafa5b0ba240fa05b5bd256308940c6433c84e7fefa0c5407fda3"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\connection_output.txt",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\verified_outputs\\connection_output.txt",
+    "sha256": "502cf98376b0cf807bcacfb007101a1a2631b81002e8889b19b1f5dcf5e1caee"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\environment.txt",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\verified_outputs\\environment.txt",
+    "sha256": "f894d594bcd652326615e8e877746043f6faeebbc764af3ceaf6759a213795cb"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\inspect_system.sh",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\diagnostics\\inspect_system.sh",
+    "sha256": "5ad6ab9857c784c8e4da4345c3e089338d469c48bae711e3627f0507d0c7eecd"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\inspect_vehicle.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\diagnostics\\inspect_vehicle.py",
+    "sha256": "314f02dbc040b18589ff81dc5eb633c94d02eff3b62d02cbba3c952a8625f606"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\vehicle_inspection_output.txt",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\setup\\diagnostics\\vehicle_inspection_output.txt",
+    "sha256": "64badd531ee2e9a7cbe196e95440d513c8d075ef60f5cd7e9e27ca03ad8b8324"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\gps_baseline.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\01_gps_baseline\\gps_baseline.py",
+    "sha256": "196322198d91951eb8bcd86b98cfa79c489f19cf41ffcc58cc1c9f0833579359"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\gps_baseline.csv",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\01_gps_baseline\\results\\recorded_baseline\\gps_baseline.csv",
+    "sha256": "72f524fcc525d4311333d26dfd3a2b0012e595ed096b1ee1eebde92c32d5b483"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\gps_baseline_excerpt.csv",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\01_gps_baseline\\results\\recorded_baseline\\gps_baseline_excerpt.csv",
+    "sha256": "4b22fe504dd016839d03884bbc654485ca2e84d84b6aab57bc3537dd763be6f5"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\baseline_output.txt",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\01_gps_baseline\\results\\recorded_baseline\\baseline_output.txt",
+    "sha256": "be29bf0dcab843e7a4e9935abb5855f8e8945439c54cef212c81d6c69c208c62"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\gps_fixed_offset.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\gps_fixed_offset.py",
+    "sha256": "ecc978d223c5e0edfc3ac497dfb4fb2cbe2276a064939c54973b1c8bfb63d44a"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\analyze_gps_offset.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\analyze_gps_offset.py",
+    "sha256": "72471596d9741a83adc83ed06e2d0f7aa1bcae10e2b2115ce2d8fb3084133270"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\gps_offset_visual.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\gps_offset_visual.py",
+    "sha256": "3fe91d44bb27b8b7fd91c953da68f7f2da2aec37f1ec1c52febe9a39e2cfb528"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\gps_gradual_drift.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\04_gps_gradual_drift\\gps_gradual_drift.py",
+    "sha256": "0c7becbd1638313611df656f72d58d9894f20ba9d98d8e439ef52986d93c63a6"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\check_gps_drift.py",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\04_gps_gradual_drift\\check_gps_drift.py",
+    "sha256": "49c6bc5d15b119d0dfbae4cd25e0db1a0a2425a88858d692de9b4be56911d6ba"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\GPS_DRIFT_GUIDE.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\archive\\previous_layout_notes\\GPS_DRIFT_GUIDE.md",
+    "sha256": "688f4e859238ebc49a97a982631e7080f19e002f09605ff6a8ffc9508573240c"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_fixed_offset_20261017T211819_023749Z\\EXPERIMENT_NOTES.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\results\\gps_fixed_offset_20261017T211819_023749Z\\EXPERIMENT_NOTES.md",
+    "sha256": "3c315bc2450985590c13dd8b250b48d55d2b2e2e4b665b49a8d9b5ddbe72dd2e"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_fixed_offset_20261017T211819_023749Z\\gps_offset_plot.png",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\results\\gps_fixed_offset_20261017T211819_023749Z\\gps_offset_plot.png",
+    "sha256": "3ef84639b77b3c34f0f43be8e5f0c89956ccda5adbbaac7a9912956c1f752527"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_fixed_offset_20261017T211819_023749Z\\gps_offset_plot.svg",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\results\\gps_fixed_offset_20261017T211819_023749Z\\gps_offset_plot.svg",
+    "sha256": "728f44f709cf722375664170732f3bb7330f6a87ba30ff065d687977e104c7db"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_fixed_offset_20261017T211819_023749Z\\metadata.json",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\results\\gps_fixed_offset_20261017T211819_023749Z\\metadata.json",
+    "sha256": "ddacd7ff40c2a02a9fcb950ac9089542644f2366a711410fe53e0de275a2d5f0"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_fixed_offset_20261017T211819_023749Z\\readings.csv",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\results\\gps_fixed_offset_20261017T211819_023749Z\\readings.csv",
+    "sha256": "1117dd39783399ad73d2282baf4a32d6f45f41b6cde5abb7524112c462a1f385"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_fixed_offset_20261017T211819_023749Z\\validation.json",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\02_gps_fixed_offset\\results\\gps_fixed_offset_20261017T211819_023749Z\\validation.json",
+    "sha256": "3bd89ee417e32e6bb2b8a7d393befbe8f580c06f0e60c85b8090a5ddb399fab8"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\carla_visual_screenshot.png",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\carla_visual_screenshot.png",
+    "sha256": "cc6de6796f4c48ee9dfac901e915f299c75188995f84fd9df48de61031209263"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\EXPERIMENT_NOTES.md",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\EXPERIMENT_NOTES.md",
+    "sha256": "acbbf7d536fc440197c4134d9b2ffc234e7fe15eee15c8bf80066f77089b7b73"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\gps_offset_plot.png",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\gps_offset_plot.png",
+    "sha256": "648b533de75783757f9ed8bf84c3b3ed21b57fad9fb9b824a454c450740aa629"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\gps_offset_plot.svg",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\gps_offset_plot.svg",
+    "sha256": "59984e2755310e782d2dff9344514da134f184022734a1e6020771296dbc1f12"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\metadata.json",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\metadata.json",
+    "sha256": "009997f20cb1727e117fba11adae09c29ecd3fc9dfb58ce36be7cd8ed014dad8"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\readings.csv",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\readings.csv",
+    "sha256": "f4a52051dc11bfd4db98bb9c9a0600f9916a04a4aa403ba0642c676cc3b96585"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps\\thesis-carla-gps\\results\\gps_offset_visual_20261017T214633_130642Z\\validation.json",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\experiments\\03_gps_fixed_offset_visual\\results\\gps_offset_visual_20261017T214633_130642Z\\validation.json",
+    "sha256": "19a9c8d3f3b84a7685ce50cd5b765f881df98fc275fcc913d90992fba3a6682c"
+  },
+  {
+    "source": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\thesis-carla-gps.zip",
+    "destination": "C:\\Users\\Saifs\\OneDrive\\Documents\\Thesis 1 work\\archive\\backups\\thesis-carla-gps.zip",
+    "sha256": "a1c65e933211acbe4f2352627938959f02013102d0478f0d6e3984d3856cc43a"
+  }
+]

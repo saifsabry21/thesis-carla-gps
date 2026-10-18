@@ -1,0 +1,30 @@
+{
+  "status": "recording_completed",
+  "started_utc": "20261018T111345_116556Z",
+  "map": "Carla/Maps/Town10HD_Opt",
+  "client_version": "0.9.14",
+  "server_version": "0.9.14",
+  "synchronous_mode": false,
+  "fixed_delta_seconds": null,
+  "attack_type": "linear_gps_drift",
+  "clean_seconds": 5.0,
+  "drift_seconds": 10.0,
+  "hold_seconds": 5.0,
+  "max_offset_x_metres": 10.0,
+  "drift_rate_metres_per_second": 1.0,
+  "sensor_tick_seconds": 0.1,
+  "gnss_noise_bias_and_stddev": 0.0,
+  "scope": "GNSS output manipulation only; no driving consumer",
+  "vehicle_id": 24,
+  "vehicle_start_xyz": [
+    -64.64484405517578,
+    24.471010208129883,
+    0.001678848173469305
+  ],
+  "sample_counts": {
+    "clean": 51,
+    "drift": 99,
+    "hold": 50
+  },
+  "visualization": "Green real position; red reported GPS drifts to +10 m; arrow shows current map-X offset. Markers raised for visibility."
+}
