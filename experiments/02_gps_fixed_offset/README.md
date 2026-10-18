@@ -1,16 +1,10 @@
-# 02 - Fixed GPS position offset
+# Fixed GPS offset — one script
 
-**Status: GPS-output manipulation verified. Driving effects not tested.**
+Use **gps_fixed_offset.py**. It contains the live attack, visuals, CSV and metadata saving, automatic validation, SVG chart, summary, and recorded review. No archived helper scripts or plotting packages are required.
 
-The script records five clean simulation seconds followed by five seconds with a +5 m map-X offset in its reported GPS output. The physical car stays parked.
+## Run on Ubuntu
 
-- `gps_fixed_offset.py`: executed experiment source, unchanged.
-- `analyze_gps_offset.py`: checker and graph generator for saved fixed-offset data; requires Matplotlib.
-- [Recorded run and full notes](results/gps_fixed_offset_20261017T211819_023749Z/EXPERIMENT_NOTES.md): 50 clean and 51 manipulated readings, settings, validation, and graphs.
-
-## Run on the university PC
-
-Follow [setup](../../setup/START_HERE.md), then:
+Keep CARLA running; use a second terminal:
 
 ```bash
 conda activate carla
@@ -18,10 +12,33 @@ cd ~/thesis-gps
 python -u gps_fixed_offset.py
 ```
 
-Each run saves its own folder under `results/` beside the source. This simpler version removes the test objects automatically after recording. Use experiment 03 for a visual demonstration that waits for screenshots.
+The car remains parked. Press Enter to start. The recording runs continuously: 5 clean + 5 attacked simulation seconds; sudden +5 m in CARLA map X. Original CARLA GNSS measurements are preserved, while reported coordinates are modified. Green marks the real position; red marks the reported position. The arrow shows position error, not a trajectory or driving response. Map X is not necessarily geographic east or the car's forward direction.
 
-For local analysis from this experiment folder, with Matplotlib available:
+After recording, the script checks the CSV and metadata, then saves `validation.json`, `gps_offset_plot.svg`, and `RESULT_SUMMARY.md` beside the raw results. A new timestamped folder is used for every run. Existing `validation.json` files are preserved; a later check writes `validation_unified.json`.
+
+The automatic recorded review pauses at each phase for screenshots. Drift review animates the actual recorded offsets before pausing. Review imagery is explicitly labeled as replay. It uses a parked illustration vehicle at an available spawn point, not a reconstruction of the original vehicle trajectory. Press Enter to advance and finally remove the car.
+
+## Replay the existing recording
 
 ```bash
-python analyze_gps_offset.py results/gps_fixed_offset_20261017T211819_023749Z
+python -u gps_fixed_offset.py --replay results/gps_fixed_offset_20261017T211819_023749Z
 ```
+
+## Check without CARLA
+
+```bash
+python gps_fixed_offset.py --check results/gps_fixed_offset_20261017T211819_023749Z
+```
+
+## Verification and scope
+
+The new version passed Python 3.8 syntax checks, read-only validation against the archived real run, and temporary synthetic checks of recording, validation, cleanup, SVG writing, and rejection of corrupted coordinates. Its combined-script CARLA run `gps_fixed_offset_20261018T123916_766224Z` has now completed, with all 14 checks passing remotely and locally. Synthetic test data was removed and is not experiment evidence.
+
+This is GPS-output manipulation in software. No radio signal is transmitted and no driving controller or VLA consumes the attacked output. Validation does not establish driving attack success.
+
+Only `gps_fixed_offset.py` is active. Previous sources and the guide are preserved byte-for-byte with hashes in `archive/previous_scripts_20261018/`. Original results remain unchanged.
+
+API documentation: https://carla.readthedocs.io/en/0.9.14/python_api/
+
+
+Latest verified combined run: `gps_fixed_offset_20261018T123916_766224Z`. All three consolidated scripts have now completed their university CARLA runs; see the root README for exact results.

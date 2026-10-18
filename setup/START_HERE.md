@@ -64,12 +64,13 @@ Expected versions: client 0.9.14 and server 0.9.14. The previously used map is `
 
 Use RustDesk File Transfer. On your laptop, open the selected folder under `Thesis 1 work/experiments/`. On the university side, open `/home/g02-f26/thesis-gps/`. Copy the required Python files into that university directory.
 
-For the next planned drift experiment, transfer both:
+Each attack now has one self-contained script:
 
-- `experiments/04_gps_gradual_drift/gps_gradual_drift.py`
-- `experiments/04_gps_gradual_drift/check_gps_drift.py`
+- Fixed offset: `experiments/02_gps_fixed_offset/gps_fixed_offset.py`
+- Gradual drift: `experiments/03_gps_gradual_drift/gps_gradual_drift.py`
+- Dropout: `experiments/04_gps_dropout/gps_dropout.py`
 
-All four experiment scripts and the drift checker have now been transferred to the university PC. The first drift run is complete; transfer is needed again only for new or changed files.
+The two latest offset/drift versions are packaged together in `setup/updates/gps-unified-updates.zip`. Transfer this ZIP to Ubuntu `~/thesis-gps` and extract it with `python -m zipfile -e gps-unified-updates.zip .`. It replaces the two named scripts. New offset/drift versions passed local checks but have now been run successfully in real CARLA; their latest versions have been transferred and executed successfully. The combined dropout version was run successfully by the user.
 
 ## 6. Choose one experiment to run
 
@@ -79,7 +80,7 @@ Run one of these commands in Terminal 2 after activating `carla` and entering `~
 |---|---|
 | Clean baseline | `python gps_baseline.py` |
 | Fixed five-metre offset | `python -u gps_fixed_offset.py` |
-| Visual five-metre offset | `python -u gps_offset_visual.py` |
+| GPS dropout | `python -u gps_dropout.py` |
 | Gradual drift: verified experiment | `python -u gps_gradual_drift.py` |
 
 The baseline writes `gps_baseline.csv` into the terminal's current directory and overwrites a file with that name. The original completed baseline is safely archived on the laptop under `experiments/01_gps_baseline/results/recorded_baseline/`. Preserve any new unarchived baseline CSV before rerunning.
@@ -88,11 +89,11 @@ The offset and drift scripts create new timestamped folders under the script's `
 
 ## 7. Use the visuals and finish the run
 
-For visual fixed-offset and drift scripts:
+For the current combined attack scripts:
 
 1. At the initial prompt, inspect the car, then press Enter in Terminal 2 to start.
 2. Look at the CARLA window while the experiment runs.
-3. At the final viewing prompt, leave it waiting and take a screenshot or recording.
+3. After automatic validation, a clearly labeled recorded review pauses at each phase for screenshots.
 4. Press Enter in Terminal 2 when finished viewing so the script removes its test car and sensor and finalizes its output.
 
 The green marker identifies the real position. The red marker identifies the false reported GPS position. The arrow illustrates their difference. It does not show the car driving.
@@ -103,10 +104,10 @@ The city view alone is not evidence that the test car is still present: the scri
 
 Transfer the completed timestamped run folder from Ubuntu `~/thesis-gps/results/` into the matching laptop experiment's `results/` folder. Keep the original `readings.csv` and `metadata.json` unchanged. Keep screenshots and analysis beside the run they document.
 
-For a drift test, use its own checker after recording:
+Checks now run automatically. To check an existing drift run without starting CARLA:
 
 ```text
-python check_gps_drift.py results/<exact drift run folder printed by the script>
+python gps_gradual_drift.py --check results/<exact drift run folder printed by the script>
 ```
 
 Replace the angle-bracket placeholder with the real folder name. Do not paste it literally. The checker runs without CARLA or extra Python packages. Graph generation is optional and needs Matplotlib; see the drift experiment's README.
@@ -145,3 +146,6 @@ kill -TERM 12345
 ```
 
 Check again with `pgrep`. If multiple processes appear or the port belongs to a different application, review the output before terminating anything else. After the selected instance exits, launch CARLA using the Terminal 1 commands above.
+
+
+All three combined scripts have now been transferred and executed; checks passed. Use the current experiment README for the latest run.

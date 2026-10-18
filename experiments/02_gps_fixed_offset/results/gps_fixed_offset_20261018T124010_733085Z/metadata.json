@@ -1,0 +1,32 @@
+{
+  "status": "recording_completed",
+  "started_utc": "20261018T124010_733085Z",
+  "map": "Carla/Maps/Town10HD_Opt",
+  "client_version": "0.9.14",
+  "server_version": "0.9.14",
+  "synchronous_mode": false,
+  "fixed_delta_seconds": null,
+  "attack_type": "fixed_gps_offset",
+  "clean_seconds": 5.0,
+  "attack_seconds": 5.0,
+  "offset_x_metres": 5.0,
+  "offset_direction": "CARLA map X, not necessarily east or vehicle forward",
+  "sensor_tick_seconds": 0.1,
+  "gnss_noise_bias_and_stddev": 0.0,
+  "scope": "GNSS output manipulation only; no driving consumer",
+  "vehicle_id": 36,
+  "vehicle_start_xyz": [
+    -64.64484405517578,
+    24.471010208129883,
+    0.0017888641450554132
+  ],
+  "script_version": "2.0",
+  "script_sha256": "00ba898813f71ee7aa738c68bcd9d34fef1ce9a37c1066fe720044a3b02b5df2",
+  "visualization": "Green real position; red reported position; arrow shows map-X error. Recorded review after live test.",
+  "sample_counts": {
+    "clean": 50,
+    "attack": 50
+  },
+  "recording_wall_seconds": 10.10705724699983,
+  "sensor_cleanup_notes": []
+}

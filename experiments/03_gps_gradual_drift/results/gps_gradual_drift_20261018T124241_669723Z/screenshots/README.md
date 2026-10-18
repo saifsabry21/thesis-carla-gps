@@ -1,0 +1,1 @@
+Screenshots supplied by the user in chat. Filenames distinguish live imagery from recorded review. They are not additional trials or measured driving outcomes. The 10 m drift screenshot is the recorded drift endpoint, not a screenshot of the hold phase. Dropout shapes screenshots belong to the earlier 11:45 UTC recording, not the later consolidated-script run.

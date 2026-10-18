@@ -1,0 +1,34 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "recording_completed": true,
+    "all_phases_present": true,
+    "counts_match_metadata": true,
+    "phases_match_timing": true,
+    "frames_and_timestamps_increase": true,
+    "elapsed_matches_simulation_clock": true,
+    "recording_starts_at_zero": true,
+    "samples_inside_interval": true,
+    "recording_reaches_end": true,
+    "offset_matches_profile": true,
+    "clean_coordinates_preserved": true,
+    "horizontal_separation_matches_offset_within_1cm": true,
+    "altitude_preserved": true,
+    "recorded_sensor_motion_below_1mm": true
+  },
+  "total_readings": 200,
+  "sample_counts": {
+    "clean": 51,
+    "drift": 100,
+    "hold": 49
+  },
+  "max_applied_offset_metres": 10.0,
+  "max_approx_horizontal_separation_metres": 9.999999999926404,
+  "max_recorded_sensor_movement_metres": 0.0,
+  "distance_method": "Spherical Haversine approximation, radius 6378137 m",
+  "interpretation": "GPS-output manipulation only. No controller or VLA effect evaluated.",
+  "source_sha256": {
+    "readings.csv": "d766478ca63488cd104ec5b9a7bd81e485a8988c88fd315b97425802ef634fd1",
+    "metadata.json": "a57450865a38b44630b695fa0603ce1886f7fe10ea6879d73a27a5ec4432d4e9"
+  }
+}

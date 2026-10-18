@@ -12,14 +12,17 @@ python --version
 CONNECTION CHECK
 python -c "import carla; c=carla.Client('localhost',2000); c.set_timeout(20.0); print('Client:',c.get_client_version()); print('Server:',c.get_server_version()); print('Map:',c.get_world().get_map().name)"
 
-GRADUAL DRIFT EXPERIMENT (both Python files are already transferred)
+GRADUAL DRIFT EXPERIMENT (one combined script; install latest update first)
 python -u gps_gradual_drift.py
 
 OTHER EXPERIMENTS - RUN ONLY THE ONE YOU NEED
-python -u gps_offset_visual.py
+python -u gps_dropout.py
 python -u gps_fixed_offset.py
 python gps_baseline.py
 
 Visual scripts pause before starting and after recording. Use the final pause for screenshots, then press Enter to finish cleanup.
 Baseline reruns overwrite gps_baseline.csv in the current directory. Other experiments create separate timestamped results folders.
 See START_HERE.md for full instructions, transfer steps, and troubleshooting.
+
+
+All three combined scripts have now been transferred and executed; checks passed. Use the current experiment README for the latest run.

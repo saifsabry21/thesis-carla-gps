@@ -1,0 +1,25 @@
+UNIVERSITY UBUNTU PC: COPY COMMANDS INTO THE REMOTE TERMINAL
+
+TERMINAL 1 - CARLA (keep it running)
+cd /home/g02-f26/carla_simulator/CARLA_0.9.14
+./CarlaUE4.sh -windowed -ResX=1280 -ResY=720
+
+TERMINAL 2 - PYTHON ENVIRONMENT
+conda activate carla
+cd /home/g02-f26/thesis-gps
+python --version
+
+CONNECTION CHECK
+python -c "import carla; c=carla.Client('localhost',2000); c.set_timeout(20.0); print('Client:',c.get_client_version()); print('Server:',c.get_server_version()); print('Map:',c.get_world().get_map().name)"
+
+GRADUAL DRIFT EXPERIMENT (both Python files are already transferred)
+python -u gps_gradual_drift.py
+
+OTHER EXPERIMENTS - RUN ONLY THE ONE YOU NEED
+python -u gps_offset_visual.py
+python -u gps_fixed_offset.py
+python gps_baseline.py
+
+Visual scripts pause before starting and after recording. Use the final pause for screenshots, then press Enter to finish cleanup.
+Baseline reruns overwrite gps_baseline.csv in the current directory. Other experiments create separate timestamped results folders.
+See START_HERE.md for full instructions, transfer steps, and troubleshooting.

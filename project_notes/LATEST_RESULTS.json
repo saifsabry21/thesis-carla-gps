@@ -1,0 +1,28 @@
+{
+  "02_gps_fixed_offset": {
+    "run": "gps_fixed_offset_20261018T123916_766224Z",
+    "counts": {
+      "clean": 51,
+      "attack": 49
+    },
+    "checks": 14
+  },
+  "03_gps_gradual_drift": {
+    "run": "gps_gradual_drift_20261018T124241_669723Z",
+    "counts": {
+      "clean": 51,
+      "drift": 100,
+      "hold": 49
+    },
+    "checks": 14
+  },
+  "04_gps_dropout": {
+    "run": "gps_dropout_20261018T122858_646455Z",
+    "counts": {
+      "clean": 50,
+      "dropout": 50,
+      "recovery": 50
+    },
+    "checks": 13
+  }
+}

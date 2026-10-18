@@ -1,0 +1,31 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "recording_completed": true,
+    "all_three_phases_present": true,
+    "counts_match_metadata": true,
+    "phases_match_timing": true,
+    "timestamps_and_frames_increase": true,
+    "elapsed_matches_simulation_clock": true,
+    "interval_covered": true,
+    "raw_samples_continue_through_dropout": true,
+    "raw_coordinates_finite": true,
+    "availability_matches_phase": true,
+    "dropout_coordinates_empty": true,
+    "available_coordinates_match_current_raw_sample": true,
+    "recorded_sensor_motion_below_1mm": true
+  },
+  "total_readings": 150,
+  "sample_counts": {
+    "clean": 50,
+    "dropout": 50,
+    "recovery": 50
+  },
+  "withheld_output_samples": 50,
+  "max_recorded_sensor_movement_metres": 0.0,
+  "interpretation": "Software GPS-output dropout only; raw CARLA GNSS continues. No RF jamming or controller/VLA effect evaluated. A parked test cannot independently distinguish stale replay from current equal-valued coordinates.",
+  "source_sha256": {
+    "readings.csv": "c5044526b9144d0c19502bf4c669e48d84ed11fdd641f9fc0af3c8ef4618ee4f",
+    "metadata.json": "62161438b0a2fbf177a9f49623df0263fd5b39a68ca4b7881497b7998d878232"
+  }
+}
